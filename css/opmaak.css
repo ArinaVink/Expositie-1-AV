@@ -1,0 +1,120 @@
+/* hiervolgt een basic layout*/
+body{
+  font-family: Century Gothic;
+  font-size: 14px;
+  background-color: gray;
+  color: white;
+}
+h1{
+  text-align: center;
+
+}
+
+.grid-container{ /* algemene specificaties voor Grid*/
+  width: auto;
+  display: grid;
+  width: 100%;
+  -ms-grid-column:1fr 1fr 1fr; /*support van IE 10 developer */
+  -webkit-columns:1fr 1fr 1fr; /*support van oudere browsers van Google Chrome, Safari, Opera*/
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+/*onderstaande boxen gestandadiseert ontwerp voor het programeren. TIJDELIJK*/
+.box0{
+  grid-area: logo; /* Het geven van een naam aan een grid area*/
+  background-image: url('../images/spacex-vector-logo.svg');
+  background-repeat: no-repeat;
+  height: 100px;
+  margin: center;
+}
+.box1{ /*speed gauge*/
+  /*background-color: gray;*/
+  grid-area: chart1;/* Het geven van een naam aan een grid area*/
+}
+.box2{ /*stukje tekst*/
+  text-align: center;
+  grid-area: chart2;/* Het geven van een naam aan een grid area*/
+}
+.box3{ /* distance chart*/
+  /*background-color: purple;*/
+  grid-area: chart3;/* Het geven van een naam aan een grid area*/
+}
+.box4{ /*stukje tekst*/
+  /*background-color: red;*/
+  text-align: center;
+  grid-area: chart4;/* Het geven van een naam aan een grid area*/
+}
+.box5{ /* voedsel en water chart*/
+  /*background-color: blue;*/
+  grid-area: chart5;/* Het geven van een naam aan een grid area*/
+}
+.box6{ /* stukje tekst*/
+  /*background-color: lightblue;*/
+  text-align: center;
+  grid-area: chart6;/* Het geven van een naam aan een grid area*/
+}
+.box7{ /* stukje tekst*/
+  /*background-color: green;*/
+  text-align: center;
+  font-size: 8px;
+  grid-area: dis;/* Het geven van een naam aan een grid area*/
+}
+
+
+@media only screen and (max-device-width:740px)  {
+  /*design mobile*/
+  body{
+  /*  background-color: red;*/
+  }
+  .grid-container{
+    grid-template-areas: "  . logo ."
+                          " . chart1 ."
+                          " . chart2 ."
+                          " . chart3 ."
+                          " . chart4 ."
+                          " . chart5 ."
+                          " . chart6 ."
+                          " . dis . "
+    }
+}
+
+@media only screen and (min-device-width:741px) and (max-device-width:1024px)  {
+  /*design tablet*/
+  body{
+  /*  background-color: blue;*/
+  }
+  .grid-container{
+    grid-template-areas:   " . logo  ."
+                          " . chart3 ."
+                          " . chart4 ."
+                          "  chart1 . chart5"
+                          "  chart2 . chart6"
+                          " . dis . "
+    }
+}
+
+@media only screen and (min-device-width:1025px) and (max-device-width:1365px)  {
+  /*design pc*/
+  body{
+  /*  background-color: white;*/
+  }
+  .grid-container{
+    grid-template-areas: " . logo ."
+                          "  chart1 chart3 chart5"
+                          "  chart2 chart4 chart6"
+                          " . dis . "
+    }
+}
+
+@media only screen and (min-device-width:1366px)  {
+  /*design retina*/
+  body{
+    /*background-color: pink;*/
+  }
+  .grid-container{
+    grid-template-areas: " . logo ."
+                          "  chart1 chart3 chart5"
+                          "  chart2 chart4 chart6"
+                          " . dis . "
+  }
+}
