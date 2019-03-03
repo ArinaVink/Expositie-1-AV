@@ -1,0 +1,55 @@
+/* hiervolgt een basic layout*/
+body{
+  font-family: Century Gothic;
+  font-size: 14px;
+  background-color: lightgray;
+  color: white;
+
+}
+
+.logo{
+  background-image: url('../images/spacex-vector-logo.svg');
+  background-repeat: no-repeat;
+  margin: center;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: Century Gothic;
+
+}
+.wrapper{
+  margin: 0 auto;
+
+}
+p{
+  text-align: center;
+  color: #bf4e19;
+}
+
+@media only screen and (max-device-width:740px)  {
+}
+
+
+@media only screen and (min-device-width:741px) and (max-device-width:1024px)  {
+  p{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-device-width:1025px) and (max-device-width:1365px)  {
+  p{
+    font-size: 16px;
+    font-style: italic;
+  }
+}
+
+@media only screen and (min-device-width:1366px)  {
+  p{
+    font-size: 16px;
+    font-style: italic;
+  }
+}

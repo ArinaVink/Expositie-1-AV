@@ -1,5 +1,6 @@
 var columnChartData =  {
     labels: ['Food' & 'Water'],
+    color: "rgba(255, 255, 255, 1)",
     datasets: [
         {
             label: 'label',
@@ -14,7 +15,7 @@ var columnChartOptions = {
     scales: {
         yAxes: [{
             gridLines: {
-                color: "rgba(0, 0, 0, 0)",
+                color: "rgba(255, 255, 255, 1)",
             }
         }]
     }

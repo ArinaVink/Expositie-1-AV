@@ -14,7 +14,7 @@ var horizontalBaroptions = {
     scales: {
         yAxes: [{
             gridLines: {
-                color: "rgba(0, 0, 0, 0)",
+                color: "rgba(255, 255, 255, 1)",
             }
         }]
     }
